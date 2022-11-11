@@ -1,0 +1,156 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(222, 222, 222);
+    background: -moz-linear-gradient(90deg, rgba(222, 222, 222, 1) 0%, rgba(243, 243, 243, 1) 30%, rgba(243, 243, 243, 1) 70%, rgba(222, 222, 222, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(222, 222, 222, 1) 0%, rgba(243, 243, 243, 1) 30%, rgba(243, 243, 243, 1) 70%, rgba(222, 222, 222, 1) 100%);
+    background: linear-gradient(90deg, rgba(222, 222, 222, 1) 0%, rgba(243, 243, 243, 1) 30%, rgba(243, 243, 243, 1) 70%, rgba(222, 222, 222, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dedede", endColorstr="#dedede", GradientType=1);
+
+    position: relative;
+}
+
+p {
+    display: block;
+    text-align: center;
+}
+
+#Tic {
+    color: rgb(189, 72, 72);
+    text-shadow: 1px 1px rgb(179, 10, 10);
+}
+
+#Tac {
+    color: rgb(72, 146, 189);
+    text-shadow: 1px 1px rgb(35, 116, 163);
+}
+
+#Toe {
+    color: rgb(189, 72, 72);
+    text-shadow: 1px 1px rgb(179, 10, 10);
+}
+
+#header {
+    display: block;
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 3em;
+}
+
+#description {
+    color: rgb(105, 105, 105);
+}
+
+#winner {
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 8em;
+    margin-left: 25%;
+}
+
+#winner span.X, span.O {
+    font-size: 3em;
+    margin-right: 0.2em;
+}
+
+#score {
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+#score span.O, span.X {
+    font-size: 2em;
+}
+
+#field {
+    max-width: 90%;
+    color: white;
+    background: rgb(219, 219, 219);
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+    border: 1em rgb(61, 61, 61);
+    box-shadow: 0.3em 0.3em rgb(195, 195, 195);
+    table-layout: fixed;
+    padding: 1vh;
+}
+
+#field tr td {
+    background: white;
+    border-radius: 2em;
+    width: 24vw;
+    height: 24vw;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0.3vh 0.3vh rgb(187, 187, 187);
+    transition-duration: 0.5s;
+}
+
+td.X, td.O {
+    border-radius: 50%;
+    font-size: 18vw;
+}
+
+#start {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    padding: 1vh 3vh;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 0.2em 0.2em rgb(200, 133, 8);
+    background: orange;
+    color: white;
+    font: bold;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+#start:hover {
+    background: rgb(255, 188, 63);
+}
+
+#start:active {
+    background: rgb(255, 170, 14);
+    box-shadow: 0.1em 0.1em rgb(200, 133, 8);
+    transform: translateY(0.3em);
+}
+
+#footer {
+    color: rgb(105, 105, 105);
+}
+
+.X, .O {
+    font-weight: bolder;
+}
+
+.X {
+    color: rgb(189, 72, 72);
+    text-shadow: 0.1em 0 rgb(179, 10, 10);
+}
+
+.O {
+    color: rgb(72, 146, 189);
+    text-shadow: 0.1em 0 rgb(35, 116, 163);
+}
+
+@media only screen and (min-width: 760px) {
+    #field tr td {
+        width: 16vh;
+        height: 16vh;
+    }
+    td.X, td.O {
+        font-size: 10vh;
+    }
+}

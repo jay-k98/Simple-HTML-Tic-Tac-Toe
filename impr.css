@@ -1,0 +1,49 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(243, 243, 243);
+    margin-bottom: 1em;
+}
+
+p {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header {
+    display: block;
+    text-align: center;
+    margin-top: 2vh;
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+
+h2, h3 {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+ul {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    list-style: none;
+    padding-left: 0;
+}
+
+.list li{
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
