@@ -21,6 +21,27 @@ p {
     font-size: 1.7em;
 }
 
+a#back {
+    display: block;
+    width: 100%;
+    text-align: center
+}
+
+#Tic {
+    color: var(--red);
+    text-shadow: 1px 1px var(--red-shadow);
+}
+
+#Tac {
+    color: var(--blue);
+    text-shadow: 1px 1px var(--blue-shadow);
+}
+
+#Toe {
+    color: var(--red);
+    text-shadow: 1px 1px var(--red-shadow);
+}
+
 h2, h3 {
     font-size: 1.5em;
     display: block;

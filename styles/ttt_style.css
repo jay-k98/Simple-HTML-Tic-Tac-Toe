@@ -1,3 +1,11 @@
+:root {
+    font-size: 16px;
+    --red: rgb(189, 72, 72);
+    --red-shadow: rgb(179, 10, 10);
+    --blue: rgb(72, 146, 189);
+    --blue-shadow: rgb(35, 116, 163);
+    --orange: rgb(200, 133, 8);
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -18,18 +26,18 @@ p {
 }
 
 #Tic {
-    color: rgb(189, 72, 72);
-    text-shadow: 1px 1px rgb(179, 10, 10);
+    color: var(--red);
+    text-shadow: 1px 1px var(--red-shadow);
 }
 
 #Tac {
-    color: rgb(72, 146, 189);
-    text-shadow: 1px 1px rgb(35, 116, 163);
+    color: var(--blue);
+    text-shadow: 1px 1px var(--blue-shadow);
 }
 
 #Toe {
-    color: rgb(189, 72, 72);
-    text-shadow: 1px 1px rgb(179, 10, 10);
+    color: var(--red);
+    text-shadow: 1px 1px var(--red-shadow);
 }
 
 #header {
@@ -109,7 +117,7 @@ td.X, td.O {
     outline: none;
     border: none;
     border-radius: 1em;
-    box-shadow: 0.2em 0.2em rgb(200, 133, 8);
+    box-shadow: 0.2em 0.2em var(--orange);
     background: orange;
     color: white;
     font: bold;
@@ -123,7 +131,7 @@ td.X, td.O {
 
 #start:active {
     background: rgb(255, 170, 14);
-    box-shadow: 0.1em 0.1em rgb(200, 133, 8);
+    box-shadow: 0.1em 0.1em var(--orange);
     transform: translateY(0.3em);
 }
 
@@ -136,13 +144,13 @@ td.X, td.O {
 }
 
 .X {
-    color: rgb(189, 72, 72);
-    text-shadow: 0.1em 0 rgb(179, 10, 10);
+    color: var(--red);
+    text-shadow: 0.1em 0 var(--red-shadow);
 }
 
 .O {
-    color: rgb(72, 146, 189);
-    text-shadow: 0.1em 0 rgb(35, 116, 163);
+    color: var(--blue);
+    text-shadow: 0.1em 0 var(--blue-shadow);
 }
 
 @media only screen and (min-width: 760px) {
