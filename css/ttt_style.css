@@ -5,10 +5,14 @@
     --blue: rgb(72, 146, 189);
     --blue-shadow: rgb(35, 116, 163);
     --orange: rgb(200, 133, 8);
+    --size: 12vh;
+    --size-mobile: 10vh;
+    --font-size: 8vh;
+    --font-size-mobile: 6vh;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: sofia-pro, sans-serif;
     margin: 0;
     padding: 0;
     background: rgb(222, 222, 222);
@@ -43,11 +47,14 @@ p {
 #header {
     display: block;
     text-align: center;
-    margin-top: 1vh;
+    margin: 0 auto;
+    margin-top: 1.8em;
     font-size: 3em;
 }
 
-#description {
+#descriptionTTT {
+    display: block;
+    margin: 0 auto;
     color: rgb(105, 105, 105);
 }
 
@@ -55,8 +62,9 @@ p {
     width: 50%;
     margin: 0 auto;
     position: absolute;
-    top: 8em;
+    top: 5em;
     margin-left: 25%;
+    margin-top: .5em;
 }
 
 #winner span.X, span.O {
@@ -77,7 +85,6 @@ p {
 }
 
 #field {
-    max-width: 90%;
     color: white;
     background: rgb(219, 219, 219);
     margin: 0 auto;
@@ -92,8 +99,8 @@ p {
 #field tr td {
     background: white;
     border-radius: 2em;
-    width: 24vw;
-    height: 24vw;
+    width: var(--size-mobile);
+    height: var(--size-mobile);
     cursor: pointer;
     text-align: center;
     box-shadow: 0.3vh 0.3vh rgb(187, 187, 187);
@@ -102,7 +109,7 @@ p {
 
 td.X, td.O {
     border-radius: 50%;
-    font-size: 18vw;
+    font-size: var(--font-size-mobile);
 }
 
 #start {
@@ -136,6 +143,8 @@ td.X, td.O {
 }
 
 #footer {
+    margin-top: 1em;
+	margin-bottom: 1em;
     color: rgb(105, 105, 105);
 }
 
@@ -155,10 +164,10 @@ td.X, td.O {
 
 @media only screen and (min-width: 760px) {
     #field tr td {
-        width: 16vh;
-        height: 16vh;
+        width: var(--size);
+        height: var(--size);
     }
     td.X, td.O {
-        font-size: 10vh;
+        font-size: var(--font-size);
     }
 }

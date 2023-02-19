@@ -1,0 +1,253 @@
+:root {
+    font-size: 16px;
+    font-family: sofia-pro, sans-serif;
+    --height_nav: 10vh;
+    --height_title: 20vh;
+    --color_persian_indigo: #27187E;
+    --color_mint_green: #B0FF92;
+    --color_blue_ncs: #0094C6;
+    --color_fiery_rose: #F45B69;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    top: 0;
+    width: 100vw;
+    height: var(--height_nav);
+    display: flex;
+    color: white;
+    background: black;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 3.2em;
+} 
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all .15s ease-in;
+}
+
+nav ul li a.active_nav {
+    font-weight: 900;
+}
+
+nav ul li a:hover {
+    font-weight: 800;
+}
+
+#menu {
+    width: 12em;
+    min-width: 12em !important;
+}
+
+#menu ul {
+    margin-top: 1em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+#menu ul li {
+    height: 5vh;
+    margin-top: 1em;
+    border-bottom: 1px solid lightgrey;
+}
+
+#menu ul li:last-child {
+    border-bottom: none;
+}
+
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: grey;
+    margin-left: 1em;
+    transition: all .15s ease-in;
+}
+
+#menu ul li a.active_dashboard {
+    color: black;
+    font-weight: 900;
+}
+
+#menu ul li a:hover {
+    font-weight: 800;
+}
+
+.menu_item1 {
+    color: var(--color_blue_ncs);
+}
+
+.menu_item2 {
+    color: var(--color_fiery_rose);
+}
+
+.menu_item3 {
+    color: var(--color_mint_green);
+}
+
+#button_home {
+    cursor: pointer;
+    display: flex;
+    font-size: 2.5em;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    margin-bottom: 0.2em;
+    text-decoration: none;
+    transition: all .15s ease-in;
+}
+
+#button_home:hover {
+    font-size: 2.7em;
+}
+
+h1 {
+    display: block;
+    width: auto;
+    font-size: 3.2em;
+    margin-left: 1em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+
+#view {
+    display: flex;
+    height: 70vh;
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#description {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+#data_view {
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+
+}
+
+#main_plot {
+    display: flex;
+    flex: 2;
+}
+
+#main_plot_canvas {
+    width: 100%;
+    height: auto;
+}
+
+#side_plots {
+    margin-left: 1em;
+    flex: 1;
+}
+
+.side_plots_item {
+    margin-bottom: 2em;
+    width: 450px;
+    height: 225px;
+}
+
+.side_plots_item_plot {
+    display: block;
+    width: calc(100% - 1em);
+    margin-right: 1em;
+    max-width: 450px;
+}
+.plot {
+    width: 600px;
+    height: 350px;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 820px) {
+    #view {
+        width: 100vw;
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        min-width: auto;
+    }
+    #menu {
+        width: 100%;
+    }
+    #view {
+        width: 100%;
+    }
+    #menu ul {
+        width: 100%;
+        margin: 0;
+    }
+    #content {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+    }
+    #description {
+        width: calc(100vw - 80px);
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #data_view {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .plot {
+        height: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+    .side_plots_item {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .side_plots_item_plot {
+        width: calc(100vw - 80px);
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    #data_view {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .side_plots_item {
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+  }

@@ -4,11 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/ttt_style.css">
+    <link rel="stylesheet" href="../css/ttt_style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gdz6jjs.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <title>JK's Tic Tac Toe</title>
 </head>
 
 <body>
+    <nav>
+        <a id="button_home" herf="#">JK</a>
+        <ul>
+            <li><a href="data_science/dashboard_01.html">Data Science</a></li>
+            <li><a href="tictactoe.html" class="active_nav">Tic Tac Toe</a></li>
+            <!--<li><a href="">About Me</a></li> -->
+        </ul>
+    </nav>
     <h1 id="header">
         <span id="Tic">
             Tic
@@ -20,7 +31,7 @@
             Toe
         </span>
     </h1>
-    <p id="description">
+    <p id="descriptionTTT">
         Simple JS Tic Tac Toe
     </p>
     <p id="winner">
@@ -66,14 +77,14 @@
             </td>
         </tr>
     </table>
-    <button id="start" onclick="start()">Start!</button>
+    <button id="start">Start</button>
     <p id="footer">
         made by JK
         <br>
         <a href='impressum.html'>Impressum</a>
         <a href='dsgvo.html'>DsGvo</a>
     </p>
-    <script src="../scripts/tictactoe.js"></script>
+    <script src="../script/tictactoe.js"></script>
 </body>
 
 </html>
