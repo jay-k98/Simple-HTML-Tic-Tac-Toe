@@ -2,4 +2,4 @@
 
 Written in pure HTML/CSS/JavaScript.
 
-Enjoy on [learntoco.de](https://www.learntoco.de/html/tictactoe.html).
+Enjoy on [jonas-klock.de](https://jonas-klock.de/html/tictactoe.html).
